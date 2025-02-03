@@ -12,21 +12,21 @@ A streamlined end-to-end project for data exploration and A/B testing using user
 - **Interactive Streamlit App**: Upload or load a local CSV, run EDA, configure A/B tests, and see results.
 
 
-## Project Structure
+# Project Structure
 
-```projectspace/google_analytics_ab_testing/
-├── app/
-│   └── streamlit_app.py        # Main Streamlit UI
+```google_analytics_ab_testing/
+
+├── streamlit_app.py          # Main Streamlit UI
 ├── data/
-│   └── user_level.csv         # Example local dataset
+│   └── user_level.csv       # Example local dataset
 ├── src/
-│   ├── __init__.py            # Enables src as a package
-│   ├── ab_testing.py          # Core A/B testing logic (transformations, zero inflation)
-│   ├── ab_test_reporting.py   # User-friendly output for test results
+│   ├── __init__.py          # Enables src as a package
+│   ├── ab_testing.py        # Core A/B testing logic
+│   ├── ab_test_reporting.py # User-friendly output for test results
 │   ├── hypothesis_recommendation.py
 │   ├── hypothesis_pricing.py
-│   └── data_aggregation.py    # Example script for user-level aggregation
-└── environment.yml            # Conda environment (optional)
+│   └── data_aggregation.py  # Example script for user-level aggregation
+└── environment.yml          # Conda environment (optional)
 
 ```
 
