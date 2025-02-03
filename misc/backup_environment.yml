@@ -1,0 +1,36 @@
+name: google_ab_testing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - jupyterlab
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - google-cloud-bigquery
+  - google-auth
+  - google-auth-oauthlib
+  - google-auth-httplib2
+  - google-api-python-client
+  - ipykernel
+  - pytest
+  - pre-commit
+  - black
+  - isort
+  - flake8
+  - requests
+  - tqdm
+  - pyarrow  # For handling BigQuery data efficiently
+  - dask  # In case of large-scale processing
+  - pip:
+      - pandas-gbq
+      - google-cloud-bigquery[pandas]  # BigQuery to Pandas conversions
+      - google-cloud-bigquery-storage
+      - streamlit  # Deployment
+      - plotly  # Interactive visualizations
